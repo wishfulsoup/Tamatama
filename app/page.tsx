@@ -1,5 +1,7 @@
 import { FC } from "react";
 
+// test
+
 const Home: FC = () => {
   return (
     <section className="h-[100vh] text-white bg-theme w-[100%] flex items-center justify-center gap-[5rem] flex-col root-fontstyle">
