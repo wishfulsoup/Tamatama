@@ -5,3 +5,50 @@
 .root-font {
   font-size: 62.5%;
 }
+
+@font-face {
+  font-family: "katana";
+  src: url("../public/fonts/KATANA.ttf") format("truetype");
+}
+.root-fontstyle {
+  font-family: "katana";
+}
+
+.position-realtive {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.bg-theme {
+  background-color: #000;
+}
+
+.btn:link,
+:visited {
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:after {
+  content: "";
+  display: block;
+  border-bottom: solid 0.5rem #fff;
+  transition: 0.25s ease-in-out;
+  transform: scaleX(0);
+}
+
+.btn:hover:after {
+  transform: scaleX(1);
+}
+
+.btn-line:after {
+  transform-origin: 0% 50%;
+}
+
+.btn:active {
+  transform: translateY(1.5px);
+}
