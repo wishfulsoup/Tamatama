@@ -1,34 +1,38 @@
 import React, { FC } from "react";
 import GachaFooter from "../../components/GachaFooter";
+import Header from "@/app/components/Header";
 
 const Gacha: FC = () => {
   return (
-    <div className="bg-black">
-      <div className="bg-white h-[12vh] text-[1.6rem] flex items-center justify-center">
-        Header
-      </div>
-      <div className="h-[76vh] text-[1.6rem] text-white bg-header w-[100%] flex items-center justify-center">
-        <div className="overflow-x-auto">
+    <div className="bg-black root-fontstyle">
+      <Header />
+      <div className="h-[73vh] text-[1.6rem] text-white bg-header w-[100%] flex items-center justify-center">
+        <div className="overflow-x-auto w-[60%]">
           <div
-            className="h-[64vh] w-[72vw] bg-white text-black rounded-2xl grid grid-cols-3 gap-4 justify-center items-center"
+            className="p-[4rem] h-[50vh] w-[100%] bg-white text-black rounded-2xl grid grid-cols-3 gap-[2rem] "
             id="gachas"
           >
-            <div className="mx-auto rounded-2xl flex items-center justify-center w-[32rem] h-[24rem] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
               Tama
             </div>
-            <div className="mx-auto rounded-2xl flex items-center justify-center w-[32rem] h-[24rem] bg-gray-400">
+
+            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
               Tama
             </div>
-            <div className="mx-auto rounded-2xl flex items-center justify-center w-[32rem] h-[24rem] bg-gray-400">
+
+            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
               Tama
             </div>
-            <div className="mx-auto rounded-2xl flex items-center justify-center w-[32rem] h-[24rem] bg-gray-400">
+
+            <div className="rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
               Tama
             </div>
-            <div className="mx-auto rounded-2xl flex items-center justify-center w-[32rem] h-[24rem] bg-gray-400">
+
+            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
               Tama
             </div>
-            <div className="mx-auto rounded-2xl flex items-center justify-center w-[32rem] h-[24rem] bg-gray-400">
+
+            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
               Tama
             </div>
           </div>
