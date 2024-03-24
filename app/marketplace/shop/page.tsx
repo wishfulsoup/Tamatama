@@ -8,8 +8,11 @@ const Shop: FC = () => {
         Header
       </div>
       <div className="h-[76vh] text-[1.6rem] text-white bg-header w-[100%] flex items-center justify-center">
-        <div className="h-[64vh] mr-[5rem] w-[30rem] bg-white text-black">
-          DropBox
+        <div className="h-[64vh] mr-[5rem] w-[30rem] bg-white text-black flex justify-center">
+          <div className="bg-gray-500 rounded-2xl h-[5rem] w-[24rem] flex justify-between items-center px-[2rem]">
+            <div className="text-[2.0rem] font-semibold">DropBox</div>
+            <button className="border-l-2 border-gray-300">세모</button>
+          </div>
         </div>
         <div className="overflow-x-auto">
           <div
