@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import GachaFooter from "../components/GachaFooter";
+import GachaFooter from "../../components/GachaFooter";
 
 const Gacha: FC = () => {
   return (
@@ -41,7 +41,7 @@ const Gacha: FC = () => {
             재화 2 : 12345 <button>+</button>
           </div>
         </div>
-        <button className="mt-[50vh] h-[8rem] w-[12rem] bg-gray-200 text-black rounded-2xl">
+        <button className="mt-[50vh] h-[8rem] w-[12rem] bg-gray-200 text-black rounded-2xl text-right">
           가챠버튼
           <br />
           (1, 10회 뽑기)
