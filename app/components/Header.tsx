@@ -15,7 +15,7 @@ const Header: FC = () => {
       </div>
 
       <div className="w-[80%] relative inline-block">
-        <div className="flex items-center text-[2rem] gap-[13rem] right-[6rem] absolute top-[3.6rem] ">
+        <div className="flex items-center text-[1.6rem] gap-[13rem] right-[3rem] absolute top-[3.6rem] w-[68%] ">
           <a href="/pets" className="btn btn-line">
             PETS
           </a>
