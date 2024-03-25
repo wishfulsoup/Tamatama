@@ -7,23 +7,28 @@
 }
 
 @font-face {
-  font-family: "katana";
-  src: url("../public/fonts/KATANA.ttf") format("truetype");
+  font-family: "rubik";
+  src: url("../public/fonts/Rubik.ttf") format("truetype");
 }
+
 .root-fontstyle {
-  font-family: "katana";
+  font-family: "rubik";
 }
 
-.position-realtive {
-  position: relative;
+.width {
+  width: 100%;
 }
 
-.position-absolute {
-  position: absolute;
+.text-theme {
+  color: #fff;
 }
 
 .bg-theme {
   background-color: #000;
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 .btn:link,
@@ -31,6 +36,7 @@
   transition: all 0.2s;
   cursor: pointer;
   display: inline-block;
+  border-bottom: solid 0.5rem transparent;
 }
 
 .btn:after {
@@ -51,4 +57,41 @@
 
 .btn:active {
   transform: translateY(1.5px);
+}
+
+.card {
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+  box-shadow: 0 rem 4rem, rgba(0, 0, 0, 1);
+}
+
+.card__prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(5rem) translateX(-50%);
+  opacity: 0.7;
+}
+
+.card__next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(5rem) translateX(-50%);
+  opacity: 0.7;
+}
+
+.card__center {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(6rem) translateX(-50%) scale(1.2);
+}
+
+.card__btn {
+  position: fixed;
+  left: 50%;
+  transform: translateX(50%);
+  bottom: 1rem;
+}
+
+.col-1-of-3 {
+  width: calc((100%-2 * 4rem) / 3);
 }
