@@ -95,3 +95,11 @@
 .col-1-of-3 {
   width: calc((100%-2 * 4rem) / 3);
 }
+
+.shop-items-scroll {
+  touch-action: pan-y;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
