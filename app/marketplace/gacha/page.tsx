@@ -4,7 +4,7 @@ import Header from "@/app/components/Header";
 
 const Gacha: FC = () => {
   return (
-    <div className="bg-black root-fontstyle">
+    <div className="bg-black text-theme-primary">
       <Header />
       <div className="h-[73vh] text-[1.6rem] text-white bg-header w-[100%] flex items-center justify-center">
         <div className="overflow-x-auto w-[60%]">
