@@ -6,7 +6,7 @@ import PetsCarousel from "../components/PetsCarousel";
 
 const pets: FC = () => {
   return (
-    <section className="root-fontstyle bg-theme m-0 p-0">
+    <section className="text-theme-primary bg-theme m-0 p-0">
       <Header />
       <div className="w-[100%] h-[85vh] relative">
         <PetsCarousel />

@@ -2,8 +2,8 @@ import { FC } from "react";
 
 const Header: FC = () => {
   return (
-    <header className=" bg-transparent text-theme h-[15vh] flex root-font width upper root-fontstyle">
-      <div className="w-[20%] ">
+    <header className="bg-transparent text-theme h-[15vh] flex root-font width upper text-theme-primary width">
+      <div className="w-[20%] inline-block">
         <div className="text-[3rem] w-[100%]relative ">
           <div className="flex flex-col items-center top-[3rem] left-[3rem] absolute ">
             <a className="flex flex-col items-center" href="/">
@@ -14,7 +14,7 @@ const Header: FC = () => {
         </div>
       </div>
 
-      <div className="w-[80%] relative">
+      <div className="w-[80%] relative inline-block">
         <div className="flex items-center text-[2rem] gap-[13rem] right-[6rem] absolute top-[3.6rem] ">
           <a href="/pets" className="btn btn-line">
             PETS
