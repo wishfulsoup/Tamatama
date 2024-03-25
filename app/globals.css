@@ -7,12 +7,12 @@
 }
 
 @font-face {
-  font-family: "katana";
-  src: url("../public/fonts/KATANA.ttf") format("truetype");
+  font-family: "rubik";
+  src: url("../public/fonts/Rubik.ttf") format("truetype");
 }
 
 .root-fontstyle {
-  font-family: "katana";
+  font-family: "rubik";
 }
 
 .width {

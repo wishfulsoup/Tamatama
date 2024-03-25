@@ -20,7 +20,6 @@ const PetsCarousel: FC = () => {
           className="card__btn"
           style={{ left: "20%" }}
           onClick={handlePrevButton}
-          disabled={activeIndex === totalCards - 1}
         >
           &larr;
         </button>
@@ -61,7 +60,6 @@ const PetsCarousel: FC = () => {
           className="card__btn"
           style={{ right: "20%" }}
           onClick={handleNextButton}
-          disabled={activeIndex === 1}
         >
           &rarr;
         </button>
