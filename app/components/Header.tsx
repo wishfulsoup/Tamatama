@@ -15,17 +15,26 @@ const Header: FC = () => {
       </div>
 
       <div className="w-[80%] relative inline-block">
-        <div className="flex items-center text-[2rem] gap-[13rem] right-[6rem] absolute top-[3.6rem] ">
+        <div className="flex items-center text-[1.6rem] gap-[13rem] right-[3rem] absolute top-[3.6rem] w-[68%] ">
           <a href="/pets" className="btn btn-line">
             PETS
           </a>
           <a href="/dressroom" className="btn btn-line">
-            DRESS ROOM
+            DRESSROOM
           </a>
           <a href="/marketplace/gacha" className="btn btn-line">
-            MARKET PLACE
+            MARKETPLACE
           </a>
-          <button className="text-[5rem] mb-[0.6rem]">&#8801;</button>
+          <div className="text-[5rem] mb-[0.6rem] w-[7rem] h-[7rem]">
+            <input
+              type="checkbox"
+              className="button__hamburger__checkbox"
+              id="modal-toggle"
+            />
+            <label htmlFor="modal-toggle" className="button__modal">
+              <span className="button__icon">&nbsp;</span>
+            </label>
+          </div>
         </div>
       </div>
     </header>
