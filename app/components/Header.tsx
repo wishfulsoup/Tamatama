@@ -20,12 +20,21 @@ const Header: FC = () => {
             PETS
           </a>
           <a href="/dressroom" className="btn btn-line">
-            DRESS ROOM
+            DRESSROOM
           </a>
           <a href="/marketplace/gacha" className="btn btn-line">
-            MARKET PLACE
+            MARKETPLACE
           </a>
-          <button className="text-[5rem] mb-[0.6rem]">&#8801;</button>
+          <div className="text-[5rem] mb-[0.6rem] w-[7rem] h-[7rem]">
+            <input
+              type="checkbox"
+              className="button__hamburger__checkbox"
+              id="modal-toggle"
+            />
+            <label htmlFor="modal-toggle" className="button__modal">
+              <span className="button__icon">&nbsp;</span>
+            </label>
+          </div>
         </div>
       </div>
     </header>
