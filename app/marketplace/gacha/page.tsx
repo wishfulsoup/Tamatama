@@ -6,7 +6,6 @@ const Gacha: FC = () => {
   return (
     <div className="bg-black text-theme-primary p-0 m-0 w-[100%] overflow-hidden">
       <Header />
-
       <div className="h-[63vh] text-[1.6rem] text-white bg-header w-[100%] flex relative mx-auto">
         <div className="overflow-x-auto w-[60%] flex items-center justify-center mx-auto">
           <div
