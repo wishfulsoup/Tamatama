@@ -46,6 +46,7 @@
   cursor: pointer;
   display: inline-block;
   border-bottom: solid 0.3rem transparent;
+  z-index: 10;
 }
 
 .btn:after {
@@ -106,10 +107,28 @@
   width: calc((100%-2 * 4rem) / 3);
 }
 
-.slide-up {
+.slide-up:not(:last-child) {
   animation: pagenation 1.2s cubic-bezier(0, 0.55, 0.45, 1);
 
   backface-visibility: hidden;
+}
+
+.slide-down {
+  animation: pagenation2 1.2s cubic-bezier(0, 0.55, 0.45, 1) !important;
+}
+
+@keyframes pagenation2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 @keyframes pagenation {
@@ -192,4 +211,32 @@
 .button__hamburger__checkbox:checked + .button__modal .button__icon::after {
   top: 3.3rem;
   transform: rotate(-135deg);
+}
+
+.landing__img-1 {
+  position: absolute;
+  top: 0;
+  left: 39%;
+  transform: translateX(-50%);
+  object-fit: contain;
+}
+
+.landing__img-2 {
+  position: absolute;
+  top: 40%;
+  right: 27%;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.landing__img-3 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.landing__title {
+  z-index: 1000;
+  position: relative;
+  line-height: 78px;
 }
