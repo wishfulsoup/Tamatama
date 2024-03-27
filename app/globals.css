@@ -192,25 +192,25 @@
 }
 
 .button__icon:hover.button__icon::before {
-  top: 2.5rem;
-  left: 2rem;
+  top: -1.7rem;
+  left: 0;
 }
 
 .button__icon:hover.button__icon::after {
-  top: 4.5rem;
-  left: 2rem;
+  top: 0.1rem;
+  left: 0;
 }
 .button__hamburger__checkbox:checked + .button__modal .button__icon {
   border: none;
 }
 
 .button__hamburger__checkbox:checked + .button__modal .button__icon::before {
-  top: 3.3rem;
+  top: -0.9rem;
   transform: rotate(135deg);
 }
 
 .button__hamburger__checkbox:checked + .button__modal .button__icon::after {
-  top: 3.3rem;
+  top: -0.8rem;
   transform: rotate(-135deg);
 }
 
