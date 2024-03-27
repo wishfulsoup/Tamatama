@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: "rubik";
-  src: url("../public/fonts/Rubik.ttf") format("truetype");
+  font-family: "eastman";
+  src: url("../public/fonts/Eastman.otf") format("truetype");
 }
 
 @font-face {
@@ -17,7 +17,7 @@
 }
 
 .text-theme-primary {
-  font-family: "rubik";
+  font-family: "eastman";
 }
 
 .text-theme-secondary {
@@ -152,17 +152,18 @@
   height: 2px;
   border-bottom: 0.3rem solid white;
   display: inline-block;
-  transition: all 0.3s;
 }
 
 .button__icon::before,
 .button__icon::after {
   position: absolute;
   content: "";
+  transition: all 0.3s;
 }
 
 .button__icon::before {
   top: 2.7rem;
+  left: 2rem;
 }
 
 .button__icon::after {
@@ -172,6 +173,7 @@
 
 .button__icon:hover.button__icon::before {
   top: 2.5rem;
+  left: 2rem;
 }
 
 .button__icon:hover.button__icon::after {
