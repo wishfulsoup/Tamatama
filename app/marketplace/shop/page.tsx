@@ -1,6 +1,7 @@
 import DropBox from "@/app/components/DropBox";
 import GachaFooter from "@/app/components/GachaFooter";
 import Header from "@/app/components/Header";
+import ShopCarousel from "@/app/components/ShopCarousel";
 import React, { FC } from "react";
 
 const Shop: FC = () => {
@@ -16,7 +17,10 @@ const Shop: FC = () => {
             className="h-[64vh] w-[48vw] bg-white text-black rounded-2xl flex justify-center items-center"
             id="pets"
           >
-            <div className="text-center">펫 카루셀 넣어주세요</div>
+            123
+            <div className="">
+              <ShopCarousel />
+            </div>
           </div>
         </div>
         <div className="h-[64vh] w-[30rem] ml-[5rem] text-right">

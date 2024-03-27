@@ -38,7 +38,7 @@ const Gacha: FC = () => {
           </div>
         </div>
         <div className="w-[20%] h-[50vh] relative"></div>
-        <button className="absolute right-[18rem] bottom-[3rem] h-[12rem] w-[20rem] bg-gray-200 text-black rounded-2xl">
+        <button className="absolute right-[25rem] bottom-[3rem] h-[12rem] w-[20rem] bg-gray-200 text-black rounded-2xl">
           GACHA !
         </button>
       </div>
