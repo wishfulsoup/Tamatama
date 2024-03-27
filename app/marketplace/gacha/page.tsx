@@ -4,12 +4,13 @@ import Header from "@/app/components/Header";
 
 const Gacha: FC = () => {
   return (
-    <div className="bg-black root-fontstyle">
+    <div className="bg-black text-theme-primary p-0 m-0 w-[100%] overflow-hidden">
       <Header />
-      <div className="h-[73vh] text-[1.6rem] bg-black w-[100%] flex items-center justify-center">
-        <div className=" w-[60%]">
+
+      <div className="h-[63vh] text-[1.6rem] text-white bg-header w-[100%] flex relative mx-auto">
+        <div className="overflow-x-auto w-[60%] flex items-center justify-center mx-auto">
           <div
-            className="p-[4rem] h-[50vh] w-[50vw] bg-white text-black rounded-2xl grid grid-cols-3 gap-[2rem]"
+            className="p-[3rem] pt-[5rem] h-[60vh] w-[100%] bg-white text-black rounded-2xl grid grid-cols-3 gap-[2rem]"
             id="gachas"
           >
             <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
@@ -37,16 +38,9 @@ const Gacha: FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-[20rem] h-[5rem] ml-[5rem] absolute top-[16vh] right-[7vw] text-white">
-          <div>
-            재화 1 : 12345 <button>+</button>
-          </div>
-          <div>
-            재화 2 : 12345 <button>+</button>
-          </div>
-        </div>
-        <button className="w-[13vw] h-[13vh] ml-[5rem] rounded-2xl absolute bottom-[23.5vh] right-[7vw] bg-gray-500 text-[3.0rem]">
-          GACHA!
+        <div className="w-[20%] h-[50vh] relative"></div>
+        <button className="absolute right-[18rem] bottom-[3rem] h-[12rem] w-[20rem] bg-gray-200 text-black rounded-2xl">
+          GACHA !
         </button>
       </div>
       <GachaFooter />

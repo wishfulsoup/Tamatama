@@ -5,7 +5,7 @@ import React, { FC } from "react";
 
 const Shop: FC = () => {
   return (
-    <div className="bg-black root-fontstyle">
+    <div className="bg-black text-theme-primary">
       <Header />
       <div className="h-[73vh] text-[1.6rem] text-white bg-header w-[100%] flex items-center justify-center">
         <div className="h-[64vh] mr-[5rem] w-[30rem] bg-white text-black flex justify-center">
@@ -20,14 +20,6 @@ const Shop: FC = () => {
           </div>
         </div>
         <div className="h-[64vh] w-[30rem] ml-[5rem] text-right">
-          <div>
-            <div>
-              재화 1 : 12345 <button>+</button>
-            </div>
-            <div>
-              재화 2 : 12345 <button>+</button>
-            </div>
-          </div>
           <div className="bg-white text-black mt-[5vh] h-[50vh] flex flex-col items-center justify-center gap-[8vh] text-[4rem] font-bold">
             <div>HOW MUCH</div>
             <div>DETAIL</div>

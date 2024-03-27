@@ -14,14 +14,14 @@ const PetsCarousel: FC = () => {
   };
 
   return (
-    <div className="w-[60%] h-[60vh] bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-md">
+    <div className="w-[60%] h-[60vh] bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-md visible">
       <div className="relative bg-orange-500 h-[60vh] -translate-y-1/2 top-1/2 pt-[3rem] overflow-hidden width">
         <button
           className="card__btn"
           style={{ left: "20%" }}
           onClick={handlePrevButton}
         >
-          &larr;
+          PREV
         </button>
         <div
           className={`absolute card  ${
@@ -61,7 +61,7 @@ const PetsCarousel: FC = () => {
           style={{ right: "20%" }}
           onClick={handleNextButton}
         >
-          &rarr;
+          NEXT
         </button>
       </div>
     </div>

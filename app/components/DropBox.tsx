@@ -27,7 +27,7 @@ const DropBox: FC = () => {
 
   return (
     <div className=" h-[64vh]">
-      <div className="bg-gray-600 rounded-2xl h-[6rem] w-[26rem] pl-[1rem] flex items-center">
+      <div className="bg-gray-600 rounded-2xl h-[6rem] w-[26rem] pl-[1rem] flex items-center ">
         <form className="" onSubmit={handleSubmit}>
           <select
             className="text-[1.6rem] appearance-none w-[18rem] mr-[1.0rem] text-center font-bold bg-gray-600 mb-[2rem] mt-[2rem]"
@@ -67,9 +67,11 @@ const DropBox: FC = () => {
           </div>
         )}
       </div>
-      <button className="bg-gray-600 rounded-2xl h-[6rem] w-[26rem] flex items-center justify-center mt-[1rem] hover:text-white active:text-white ">
-        Resets
-      </button>
+      {result.length > 0 && (
+        <button className="bg-gray-600 rounded-2xl h-[6rem] w-[26rem] flex items-center justify-center mt-[1rem] hover:text-white active:text-white ">
+          Resets
+        </button>
+      )}
     </div>
   );
 };

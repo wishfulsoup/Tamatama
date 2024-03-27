@@ -11,8 +11,17 @@
   src: url("../public/fonts/Rubik.ttf") format("truetype");
 }
 
-.root-fontstyle {
+@font-face {
+  font-family: "space-mono";
+  src: url("../public/fonts/SpaceMono.ttf");
+}
+
+.text-theme-primary {
   font-family: "rubik";
+}
+
+.text-theme-secondary {
+  font-family: "space-mono" !important;
 }
 
 .width {
@@ -90,6 +99,7 @@
   left: 50%;
   transform: translateX(50%);
   bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 .col-1-of-3 {
@@ -102,4 +112,27 @@
 
 ul::-webkit-scrollbar {
   display: none;
+}
+.slide-up {
+  animation: pagenation 0.8s ease;
+
+  backface-visibility: hidden;
+}
+
+@keyframes pagenation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.btn-search:active {
+  transform: ;
 }
