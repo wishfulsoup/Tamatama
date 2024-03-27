@@ -22,6 +22,7 @@
 
 .text-theme-secondary {
   font-family: "space-mono" !important;
+
 }
 
 .width {
@@ -240,3 +241,43 @@
   position: relative;
   line-height: 78px;
 }
+
+.shop__container {
+  position: absolute;
+  height: 45vh;
+  width: 45%;
+  top: calc(30%);
+  left: calc(50% - 22.5%);
+  display: flex;
+}
+
+.shop__card {
+  display: flex;
+  height: 40vh;
+  width: 32%;
+  background-color: #17141d;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -1rem 0 1.5rem #000;
+
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 1rem;
+}
+
+.shop__card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.shop__card:hover ~ .shop__card {
+  position: relative;
+  left: 30px;
+  transition: 0.4s ease-out;
+}
+
+.shop__card:active {
+  scale: 1.4;
+  border-color: rgb(255, 0, 0, 0.2);
+}
+

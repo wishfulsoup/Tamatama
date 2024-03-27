@@ -12,48 +12,35 @@ const Gacha: FC = () => {
             className="p-[3rem] pt-[5rem] h-[60vh] w-[100%] bg-white text-black rounded-2xl grid grid-cols-3 gap-[2rem]"
             id="gachas"
           >
-            <div className="rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
               Tama
             </div>
 
-            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
               Tama
             </div>
 
-            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
               Tama
             </div>
 
-            <div className="rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
               Tama
             </div>
 
-            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
               Tama
             </div>
 
-            <div className=" rounded-2xl flex items-center justify-center col-1-of-3 h-[20vh] bg-gray-400">
+            <div className="rounded-2xl flex items-center justify-center h-[20vh] bg-gray-400">
               Tama
             </div>
           </div>
         </div>
-        <div className="w-[20%] h-[50vh] relative">
-          <div className="absolute right-[2rem] top-0 bg-transparent h-[10vh] w-[50%] text-[1.2rem] text-white text-theme-secondary ">
-            <div className="block">
-              <div>
-                재화 1 : 12345 <button>+</button>
-              </div>
-              <div>
-                재화 2 : 12345 <button>+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <button className="mt-[50vh] h-[8rem] w-[12rem] bg-gray-200 text-black rounded-2xl text-right">
-          가챠버튼
-          <br />
-          (1, 10회 뽑기)
-        </button> */}
+        <div className="w-[20%] h-[50vh] relative"></div>
+        <button className="absolute right-[25rem] bottom-[3rem] h-[12rem] w-[20rem] bg-gray-200 text-black rounded-2xl">
+          GACHA !
+        </button>
       </div>
       <GachaFooter />
     </div>
