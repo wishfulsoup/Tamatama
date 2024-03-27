@@ -7,7 +7,7 @@ const Header: FC = () => {
         <div className="text-[3rem] w-[100%]relative ">
           <div className="flex flex-col items-center top-[3rem] left-[3rem] absolute ">
             <a className="flex flex-col items-center" href="/">
-              <span>tamagochi</span>
+              <span>tamagotchi</span>
               <span>PROJECT</span>
             </a>
           </div>
