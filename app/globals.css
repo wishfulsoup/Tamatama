@@ -22,10 +22,7 @@
 
 .text-theme-secondary {
   font-family: "space-mono" !important;
-}
 
-.text-theme-secondary {
-  font-family: "space-mono" !important;
 }
 
 .width {
@@ -283,3 +280,4 @@
   scale: 1.4;
   border-color: rgb(255, 0, 0, 0.2);
 }
+
