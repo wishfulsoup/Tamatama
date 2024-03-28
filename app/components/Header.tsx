@@ -1,4 +1,5 @@
 import { FC } from "react";
+import CashBox from "./CashBox";
 
 const Header: FC = () => {
   return (
@@ -13,7 +14,6 @@ const Header: FC = () => {
           </div>
         </div>
       </div>
-
       <div className="w-[80%] relative inline-block">
         <div className="flex items-center text-[1.6rem] gap-[13rem] right-[3rem] absolute top-[3.6rem] w-[68%] ">
           <a href="/pets" className="btn btn-line">
@@ -35,6 +35,9 @@ const Header: FC = () => {
               <span className="button__icon">&nbsp;</span>
             </label>
           </div>
+        </div>
+        <div className="absolute right-[11rem] top-[12rem]">
+          <CashBox />
         </div>
       </div>
     </header>
