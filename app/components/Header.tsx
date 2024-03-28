@@ -8,14 +8,14 @@ const Header: FC = () => {
         <div className="text-[3rem] w-[100%]relative ">
           <div className="flex flex-col items-center top-[3rem] left-[3rem] absolute ">
             <a className="flex flex-col items-center" href="/">
-              <span>tamagochi</span>
+              <span>tamagotchi</span>
               <span>PROJECT</span>
             </a>
           </div>
         </div>
       </div>
       <div className="w-[80%] relative inline-block">
-        <div className="flex items-center text-[1.6rem] gap-[13rem] right-[3rem] absolute top-[3.6rem] w-[68%]">
+        <div className="flex items-center text-[1.6rem] gap-[13rem] right-[3rem] absolute top-[3.6rem] w-[68%] ">
           <a href="/pets" className="btn btn-line">
             PETS
           </a>

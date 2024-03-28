@@ -34,7 +34,7 @@ const Home: FC = () => {
         <img
           src="../img/tamago.png"
           className="landing__img-2 object w-[26rem]"
-          data-value="1"
+          data-value="-4"
           alt=""
         />
         <img
