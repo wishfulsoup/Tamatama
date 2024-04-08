@@ -56,12 +56,12 @@ const DropBox: FC = () => {
           <div>
             <ul className="flex flex-col items-center overflow-scroll h-[48vh] shop-items-scroll">
               {result.map((item, index) => (
-                <li
+                <button
                   key={index}
                   className="bg-gray-500 rounded-2xl min-h-[5rem] min-w-[20rem] flex items-center justify-center mt-[5vh]"
                 >
                   <div>{item.item}</div>
-                </li>
+                </button>
               ))}
             </ul>
           </div>

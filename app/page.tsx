@@ -2,6 +2,8 @@
 
 import { FC, useEffect } from "react";
 import LoginPage from "./components/LoginPage";
+import TopButton from "./components/Topbutton";
+import Image from "next/image";
 
 const Home: FC = () => {
   useEffect(() => {
@@ -28,8 +30,8 @@ const Home: FC = () => {
   }, []);
 
   return (
-    <>
-      <section className="h-[100vh] text-white bg-theme w-[100%] flex items-center justify-center gap-[5rem] flex-col text-theme-primary slide-up overflow-hidden">
+    <div className="overflow-hidden">
+      <section className="h-[95vh] text-white bg-theme w-[100%] flex items-center justify-center gap-[5rem] flex-col text-theme-primary mt-[5rem] slide-up overflow-hidden">
         <div className="relative w-[150rem] h-[100rem] flex flex-col justify-center items-center overflow-hidden">
           <h1 className="text-[7rem] object landing__title" data-value="1">
             たまごっち
@@ -101,12 +103,12 @@ const Home: FC = () => {
             </ul>
           </div>
           <div className="footer__content-desc">
-            <ul>
-              <h5 className="footer__title">TAMAGOTCHI</h5>
-              <li>About</li>
-              <li>Press</li>
-              <li>Governance</li>
-            </ul>
+            <Image
+              src="/img/tamagotchi.png"
+              width={160}
+              height={160}
+              alt="tamagotchi image"
+            />
           </div>
           <div className="footer__content-desc">
             <ul>
@@ -135,7 +137,10 @@ const Home: FC = () => {
           <span className="footer__copyright-span"> All Rights Reserved</span>
         </div>
       </footer>
-    </>
+      <section className="fixed right-[5%] bottom-[5%]">
+        <TopButton />
+      </section>
+    </div>
   );
 };
 
