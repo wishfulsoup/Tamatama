@@ -2,6 +2,7 @@
 
 import { FC, useEffect } from "react";
 import TopButton from "./components/Topbutton";
+import Image from "next/image";
 
 const Home: FC = () => {
   useEffect(() => {
@@ -81,9 +82,39 @@ const Home: FC = () => {
           </div>
         </div>
       </section>
-      <div className="fixed right-[5%] bottom-[5%]">
+      <section className="bg-black h-[35vh] px-[10vw] text-white text-[2rem] text-theme-primary">
+        <div className="h-[90%] flex items-center justify-between">
+          <div className="h-full w-[40%] text-[1.8rem] pt-[3%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            vero aut iusto sed repellat, voluptate laboriosam quae minima qui
+            animi maxime libero dicta consequuntur nisi adipisci officia rerum
+            eligendi rem.
+          </div>
+          <div className="flex items-center gap-[2vw] ">
+            <div>
+              <Image
+                src="/img/tamagotchi.png"
+                width={160}
+                height={160}
+                alt="tamagotchi image"
+              />
+            </div>
+            <h1 className="font-bold text-[3rem]">
+              たまごっち
+              <br />
+              <span>TAMAGOTCHI PROJECT</span>
+            </h1>
+          </div>
+        </div>
+        <div className="text-[1.5rem] font-sans">
+          © Copyright 2024 &quot;Heago&quot; All rights reserved.
+          <br />
+          Contact us for business purposes : abcd@heago.com
+        </div>
+      </section>
+      <section className="fixed right-[5%] bottom-[5%]">
         <TopButton />
-      </div>
+      </section>
     </>
   );
 };
