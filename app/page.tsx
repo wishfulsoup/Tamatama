@@ -1,6 +1,7 @@
 "use client";
 
 import { FC, useEffect } from "react";
+import TopButton from "./components/Topbutton";
 
 const Home: FC = () => {
   useEffect(() => {
@@ -80,6 +81,9 @@ const Home: FC = () => {
           </div>
         </div>
       </section>
+      <div className="fixed right-[5%] bottom-[5%]">
+        <TopButton />
+      </div>
     </>
   );
 };
