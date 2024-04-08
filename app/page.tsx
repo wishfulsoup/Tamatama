@@ -1,6 +1,7 @@
 "use client";
 
 import { FC, useEffect } from "react";
+import LoginPage from "./components/LoginPage";
 
 const Home: FC = () => {
   useEffect(() => {
@@ -33,7 +34,7 @@ const Home: FC = () => {
           <h1 className="text-[7rem] object landing__title" data-value="1">
             たまごっち
             <br />
-            <span className="">TAMAGOTCHI PROJECT</span>
+            <span className="title">TAMAGOTCHI PROJECT</span>
           </h1>
 
           <img
@@ -58,9 +59,10 @@ const Home: FC = () => {
             <a href="/pets" className="btn btn-line">
               PLAY
             </a>
-            <a href="#" className="btn btn-line">
+            <a href="#popup" className="btn btn-line">
               LOGIN
             </a>
+            <LoginPage />
           </div>
         </div>
       </section>
@@ -80,6 +82,59 @@ const Home: FC = () => {
           </div>
         </div>
       </section>
+      <footer className="footer">
+        <div className="footer__content">
+          <div className="footer__content-desc">
+            <ul>
+              <h5 className="footer__title">TAMAGOTCHI</h5>
+              <li>About</li>
+              <li>Press</li>
+              <li>Governance</li>
+            </ul>
+          </div>
+          <div className="footer__content-desc">
+            <ul>
+              <h5 className="footer__title">TAMAGOTCHI</h5>
+              <li>About</li>
+              <li>Press</li>
+              <li>Governance</li>
+            </ul>
+          </div>
+          <div className="footer__content-desc">
+            <ul>
+              <h5 className="footer__title">TAMAGOTCHI</h5>
+              <li>About</li>
+              <li>Press</li>
+              <li>Governance</li>
+            </ul>
+          </div>
+          <div className="footer__content-desc">
+            <ul>
+              <h5 className="footer__title">TAMAGOTCHI</h5>
+              <li>About</li>
+              <li>Press</li>
+              <li>Governance</li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer__contact">
+          <div className="footer__contact-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </div>
+          <div className="footer__contact-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </div>
+        </div>
+        <div className="footer__copyright">
+          Copyright &copy; 2024 Tamagotchi
+          <span className="footer__copyright-span"> All Rights Reserved</span>
+        </div>
+      </footer>
     </>
   );
 };
