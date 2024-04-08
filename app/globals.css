@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*루트폰트*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .root-font {
   font-size: 62.5%;
 }
@@ -16,23 +22,24 @@
   src: url("../public/fonts/SpaceMono.ttf");
 }
 
+/* 첫번째 폰트*/
 .text-theme-primary {
   font-family: "eastman";
 }
-
+/*두번째 폰트*/
 .text-theme-secondary {
   font-family: "space-mono" !important;
-
 }
 
 .width {
   width: 100%;
 }
 
+/*텍스트 컬러*/
 .text-theme {
   color: #fff;
 }
-
+/*배경 색상*/
 .bg-theme {
   background-color: #000;
 }
@@ -41,6 +48,7 @@
   text-transform: uppercase;
 }
 
+/*버튼 Theme*/
 .btn:link,
 :visited {
   transition: all 0.2s;
@@ -70,6 +78,7 @@
   transform: translateY(1.5px);
 }
 
+/*PETS CAROUSEL*/
 .card {
   transition: transform 1s, left 1s, opacity 1s, z-index 0s;
   opacity: 1;
@@ -152,16 +161,17 @@
 
 .button__modal {
   background-color: black;
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
   cursor: pointer;
   text-align: center;
   position: relative;
   right: 2.5rem;
+  top: 0;
 }
 
 .button__icon {
-  margin: 3.2rem 0;
+  margin: 3.3rem 0 0 1rem;
 
   z-index: 2222;
 }
@@ -184,37 +194,73 @@
 
 .button__icon::before {
   top: -1.6rem;
-  left: 0;
+  left: 1rem;
 }
 
 .button__icon::after {
   top: 0rem;
-  left: 0;
+  left: 1rem;
 }
 
 .button__icon:hover.button__icon::before {
-  top: 2.5rem;
-  left: 2rem;
+  top: -1.7rem;
+  left: 1rem;
 }
 
 .button__icon:hover.button__icon::after {
-  top: 4.5rem;
-  left: 2rem;
+  top: 0.1rem;
+  left: 1rem;
 }
 .button__hamburger__checkbox:checked + .button__modal .button__icon {
   border: none;
 }
 
 .button__hamburger__checkbox:checked + .button__modal .button__icon::before {
-  top: 3.3rem;
+  top: -0.9rem;
   transform: rotate(135deg);
+  left: 1rem;
 }
 
 .button__hamburger__checkbox:checked + .button__modal .button__icon::after {
-  top: 3.3rem;
+  top: -0.8rem;
   transform: rotate(-135deg);
+  left: 1rem;
 }
 
+/*HAMBURGER POPUP*/
+
+.modal__nav {
+  position: fixed;
+  top: 9rem;
+  right: 3.5rem;
+  width: 10%;
+  height: 3vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(151, 10, 10, 0.3),
+    rgba(4, 4, 178, 0.5)
+  );
+  border-radius: 3;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: transform 0.4s cubic-bezier(0.83, 0, 0.17, 1);
+  transform-origin: top;
+  border-radius: 5px;
+}
+
+.modal__item {
+  list-style: none;
+  margin: 2rem 0 0 2rem;
+}
+
+.button__hamburger__checkbox:checked ~ .modal__nav {
+  transform: scaleY(1);
+  height: 30vh;
+  opacity: 1;
+  font-size: 1.6rem;
+}
+
+/*PARALLEX*/
 .landing__img-1 {
   position: absolute;
   top: 0;
@@ -226,7 +272,7 @@
 .landing__img-2 {
   position: absolute;
   top: 40%;
-  right: 27%;
+  right: 25rem;
   object-fit: contain;
   z-index: 0;
 }
@@ -234,7 +280,7 @@
 .landing__img-3 {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 18%;
 }
 
 .landing__title {
@@ -282,3 +328,14 @@
   border-color: rgb(255, 0, 0, 0.2);
 }
 
+/*GAME INFO*/
+.game-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-info__card {
+  height: 28vh;
+  width: 50%;
+  border-radius: 3px;
+}
