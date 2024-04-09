@@ -94,14 +94,7 @@ const Home: FC = () => {
               <li>Governance</li>
             </ul>
           </div>
-          <div className="footer__content-desc">
-            <ul>
-              <h5 className="footer__title">TAMAGOTCHI</h5>
-              <li>About</li>
-              <li>Press</li>
-              <li>Governance</li>
-            </ul>
-          </div>
+
           <div className="footer__content-desc">
             <Image
               src="/img/tamagotchi.png"
